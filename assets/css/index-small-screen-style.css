@@ -1,0 +1,29 @@
+section {
+    border: none;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.card {
+    width: 320px;
+    height: 320px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 12px;
+}

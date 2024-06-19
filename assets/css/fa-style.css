@@ -1,0 +1,30 @@
+body {
+    text-align: right;
+    font-family: 'Embed code', sans-serif;
+    direction: rtl;
+}
+
+body.light-mode main .card p {
+    text-align: right;
+    font-weight: 400;
+    background-color: white;
+    transition: background-color .3s;
+}
+
+body.dark-mode main .card p {
+    text-align: right;
+    font-weight: 400;
+    background-color: black;
+    transition: .3s;
+}
+
+.card button {
+    margin-top: 140px;
+    font-family: 'Embed code', sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+    .cards {
+        gap: 50px;
+    }
+}

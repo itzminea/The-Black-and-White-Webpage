@@ -1,0 +1,194 @@
+body {
+    transition: background-color 0.3s, color 1s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 67px;
+    border: 2px solid currentColor;
+}
+
+section header {
+    text-align: center;
+}
+
+header p {
+    line-height: 2rem;
+    font-size: 14px;
+}
+
+body.light-mode section header p {
+    color: #525252;
+}
+
+body.dark-mode section header p {
+    color: #dbdbdb;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.light-mode header a,
+body.dark-mode header a {
+    text-decoration: none;
+    border: 1px solid;
+    padding: 2px 6px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode a {
+    color: #000;
+    border-color: #000;
+}
+
+body.dark-mode a {
+    color: #fff;
+    border-color: #fff;
+}
+
+body.light-mode a:hover {
+    background-color: #000;
+    color: #ffffff;
+}
+
+body.dark-mode a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    border: 2px solid currentColor;
+    transition: box-shadow 0.2s;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    box-shadow: 10px 10px currentColor;
+}
+
+hr {
+    border: 2px solid currentColor;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: 100;
+    width: 100%;
+    text-align: start;
+}
+
+body.light-mode .card button {
+    margin-top: 135px;
+    height: 50px;
+    width: 200px;
+    background: none;
+    color: currentColor;
+    border: 2px solid currentColor;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+body.dark-mode .card button {
+    margin-top: 135px;
+    height: 50px;
+    width: 200px;
+    background: none;
+    color: currentColor;
+    border: 2px solid currentColor;
+    font-size: 20px;
+    background-color: #000;
+}
+
+.card.i button:hover {
+    background-image: linear-gradient(45deg, rgb(227, 79, 39), rgb(22, 115, 181));
+}
+
+.card.ii button:hover {
+    background-color: rgb(140, 118, 222);
+}
+
+.card.iii button:hover {
+    background-color: rgb(51, 163, 242);
+}
+
+.card.i button:active {
+    background-image: linear-gradient(45deg, rgb(227, 111, 79), rgb(22, 51, 181));
+}
+
+.card.ii button:active {
+    background-color: rgb(87, 50, 223);
+}
+
+.card.iii button:active {
+    background-color: rgb(51, 67, 242); 
+}
+
+footer {
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+body.light-mode .card.i {
+    background-image: url(img/light-mode/htmlcss.png);
+}
+
+body.dark-mode .card.i {
+    background-image: url(img/dark-mode/htmlcss.png);
+}
+
+body.light-mode .card.ii {
+    background-image: url(img/light-mode/csharp.png);
+}
+
+body.dark-mode .card.ii {
+    background-image: url(img/dark-mode/csharp.png);
+}
+
+body.light-mode .card.iii {
+    background-image: url(img/light-mode/photoshop.png);
+}
+
+body.dark-mode .card.iii {
+    background-image: url(img/dark-mode/photoshop.png);
+}
